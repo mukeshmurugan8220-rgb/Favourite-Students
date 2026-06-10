@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/mukeshmurugan8220-rgb/Favourite-Students.git/static/css/main.3293974b.css",
-    "main.js": "/mukeshmurugan8220-rgb/Favourite-Students.git/static/js/main.165ec20d.js",
-    "index.html": "/mukeshmurugan8220-rgb/Favourite-Students.git/index.html",
-    "main.3293974b.css.map": "/mukeshmurugan8220-rgb/Favourite-Students.git/static/css/main.3293974b.css.map",
-    "main.165ec20d.js.map": "/mukeshmurugan8220-rgb/Favourite-Students.git/static/js/main.165ec20d.js.map"
+    "main.css": "/Favourite-Students/static/css/main.3293974b.css",
+    "main.js": "/Favourite-Students/static/js/main.165ec20d.js",
+    "index.html": "/Favourite-Students/index.html",
+    "main.3293974b.css.map": "/Favourite-Students/static/css/main.3293974b.css.map",
+    "main.165ec20d.js.map": "/Favourite-Students/static/js/main.165ec20d.js.map"
   },
   "entrypoints": [
     "static/css/main.3293974b.css",
