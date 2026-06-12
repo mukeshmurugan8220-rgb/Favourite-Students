@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { StudentProvider } from "./context/StudentContext";
+import StudentList from "./pages/StudentList";
+import FavouriteStudents from "./pages/FavouriteStudents";
+import "./App.css";
 
 function App() {
+  const [page, setPage] = useState("students");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StudentProvider>
+      <div>
+        <nav>
+          <button type="button" onClick={() => setPage("students")}>Students</button>
+          {" | "}
+          <button type="button" onClick={() => setPage("favourites")}>Favourite Students</button>
+        </nav>
+
+        {page === "students" ? <StudentList /> : <FavouriteStudents />}
+      </div>
+    </StudentProvider>
   );
 }
 
